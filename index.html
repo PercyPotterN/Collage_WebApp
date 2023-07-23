@@ -1,58 +1,64 @@
-
 <html>
 
     <head>
         <title>My Selfie App</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    
+
         <link href="style.css" rel="stylesheet">
-    
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js" type="text/javascript"></script>
-    
+
     </head>
-    
-    <body id="body">
+
+    <body>
         <center>
-            <h1 class="words">Collage Web App </h1>
+            <h1>Collage Web App
+            </h1>
             <hr>
-            <h4 class="words">Please press allow as soon as popup comes. After you give a voice command</h4>
-    
-            <h3 class="words">Say "selfie" for Taking your selfie to make a Collage</h3>
-    
+            <h4>Please press allow as soon as popup comes. After you give a voice command</h4>
+
+            <h3>Say "selfie" for Taking your selfie to make a Collage</h3>
+
             <button class="btn btn-lg btn-primary" onclick="start()">Start</button>
-            <h4 class="words">Press the Start button</h4>
-    
-            <label class="words">Your webcam : </label>
+            <h4>Press the Start button</h4>
+
+            <label>Your webcam :
+            </label>
             <div id="camera"></div>
-    
+
             <br>
-    
-            <label class="words">Your selife Will Display Here: </label>
+
+            <label>Your selife Will Display Here:
+            </label>
             <br>
             <div id="resultRow">
-                <div id="result1" >
-                    <img src="https://images.unsplash.com/photo-1476169785137-3bfe32e30ee1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y2FtZXJhJTIwcGljdHVyZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60"    
-                    style="width:290px " >   
+                <div class="column" >
+                    <img src="https://cdn.mos.cms.futurecdn.net/mVEhQU5grHExywfQsDoAYj.jpg">
                 </div>
-                <div id="result2" >
-                    <img src="https://images.unsplash.com/photo-1535555898298-d5a8f73af8b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGNhbWVyYSUyMHBpY3R1cmV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60"
-                    style="width:290px" >
-                    </div>
-                    <div id="result3" >
-                    <img src="https://unsplash.com/photos/N10auyEVst8/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjQzOTUxMjA2&force=true"
-                    style="width:290px " >
-                    </div>
-                    
-                    
-               
+
+                <div class="column" >
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.sGqYpReK6jkaN8GZXfpOWgHaE8&pid=Api&P=0&h=180">
+                </div>
+
+                <div class="column" >
+                    <img src="https://tse2.mm.bing.net/th?id=OIP.MgEJ0zpEInW_y1uTxNB9vQHaEo&pid=Api&P=0&h=180">
+                </div>
             </div>
+
+            <div id="result1"></div>
+
+            <div id="result2"></div>
+
+            <div id="result3"></div>
         </center>
-    <div id="footer ">By Nihal</div>
+
+        <div class="copy_right_footer">
+            Developed by - Nihal
+        </div>
         <script src="main.js"></script>
     </body>
-    
-    </html>
-    
+
+</html>
